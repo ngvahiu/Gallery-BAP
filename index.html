@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Image search gallery - Intern</h1>
+        <form class="search-box">
+            <div class="input-container">
+                <input type="text" placeholder="Nhập vào nội dung bạn muốn tìm kiếm" type="search" id="search-input" value>
+                <button onclick="document.querySelector('.input-container input').value = '';">×</button>
+            </div>
+            <button type="button" id="search-button">SEARCH</button>
+        </form>
+        <div class="hot-search">
+            <span>Hot search:</span>
+            <button>dog</button>
+            <button>cat</button>
+            <button>love</button>
+            <button>beautiful</button>
+            <button>natural</button>
+            <button>iphone</button>
+            <button>summer</button>
+            <button>computer</button>
+            <button>covid</button>
+            <button>family</button>
+        </div>
+        <ul class="photo-grid">
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"
+        integrity="sha512-PJa3oQSLWRB7wHZ7GQ/g+qyv6r4mbuhmiDb8BjSFZ8NZ2a42oTtAq5n0ucWAwcQDlikAtkub+tPVCw4np27WCg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
